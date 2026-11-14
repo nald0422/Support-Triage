@@ -1,0 +1,47 @@
+# # Secrets
+.env
+.env.*
+!.env.example
+
+# Python and uv
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (re-created by scripts/download_data.py and the processing scripts)
+data/
+
+# Eval run outputs (keep evals/history.csv and the eval sets themselves)
+evals/runs/
+
+# Local databases and vector stores (re-created by seed and index scripts)
+*.db
+*.sqlite
+chroma/
+.chroma/
+
+# Models and training outputs (Phase 5–6)
+models/
+checkpoints/
+outputs/
+*.safetensors
+*.bin
+*.onnx
+
+# OS and editors
+.DS_Store
+.vscode/
+.idea/
