@@ -48,4 +48,18 @@ at risk of running out of publicly available internet data to train them.
   - Tokens also helps identifying unknown words. For example a made up word like "maxxing" by breaking the word 
     we can come up with "max" and "xing" helping the model understand its structure.
 
+    ```mermaid
+      flowchart LR
+      text["Raw text<br/>I can't wait"]
+
+      subgraph LM["Language model"]
+          subgraph V["Vocabulary: every token the model knows<br/>e.g. Mixtral 8x7B has 32,000"]
+              tokens["Tokens<br/>I · can · 't · wait<br/><br/>A token can be a word,<br/>a character, or part of a word"]
+          end
+      end
+
+      text -- "Tokenization" --> tokens
+      tokens -- "Detokenization" --> out["Output text"]
+    ```
+
 **Next:** **Two main types of language models: masked language models and autore‐gressive language models.**
