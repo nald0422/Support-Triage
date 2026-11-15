@@ -2,7 +2,30 @@
 
 An AI system that triages customer support tickets: it classifies intent and urgency, retrieves the right help articles, drafts a grounded reply, takes simple actions through tools, and escalates anything risky to a human. Every draft is approved by a human agent before it's sent.
 
-> **Status:** in progress (Week 0 of 17). Built while working through *AI Engineering* by Chip Huyen (O'Reilly, 2025), one chapter pair per phase.
+> **Status:** Week 0 of 17, in progress.
+
+## Built alongside the book
+
+[![Book: AI Engineering by Chip Huyen](https://img.shields.io/badge/Book-AI%20Engineering%20%C2%B7%20Chip%20Huyen-1f6feb?style=for-the-badge)](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+[![Companion repo](https://img.shields.io/badge/Companion%20repo-chiphuyen%2Faie--book-24292f?style=for-the-badge&logo=github)](https://github.com/chiphuyen/aie-book)
+
+This project is my hands-on companion to ***AI Engineering: Building Applications with Foundation Models*** by Chip Huyen (O'Reilly, 2025). Each phase pairs one or two chapters with one working piece of the system, so the repo doubles as a record of my journey through the book. The reasoning behind each decision lives in [`LEARNINGS.md`](LEARNINGS.md), and the numbers in [`evals/history.csv`](evals/history.csv).
+
+### Book journey
+
+| Phase | Weeks | Chapters | What it builds | Status |
+| --- | --- | --- | --- | --- |
+| Setup | 0 | Preface, Ch 1 (intro) | Repo, dataset download and exploration | 🔄 |
+| 1 | 1–2 | Ch 1 Building AI Applications · Ch 2 Understanding Foundation Models | Spec, off-the-shelf baseline, sampling and structured-output experiments | ⬜ |
+| 2 | 3–5 | Ch 3 Evaluation Methodology · Ch 4 Evaluate AI Systems | Eval sets, validated AI judge, one-command eval pipeline | ⬜ |
+| 3 | 6–7 | Ch 5 Prompt Engineering | Versioned prompts, triage → reply chain, prompt-attack testing | ⬜ |
+| 4 | 8–10 | Ch 6 RAG and Agents | Hybrid retrieval, grounded replies, tool-using agent | ⬜ |
+| 5 | 11–13 | Ch 7 Finetuning · Ch 8 Dataset Engineering | Curated dataset, fine-tuning vs. prompting comparison | ⬜ |
+| 6 | 14 | Ch 9 Inference Optimization | Latency and cost optimization | ⬜ |
+| 7 | 15–16 | Ch 10 AI Engineering Architecture and User Feedback | Guardrails, router, gateway, monitoring, dashboard, deployment | ⬜ |
+| Finish | 17 | Epilogue | Write-up and demo | ⬜ |
+
+✅ done · 🔄 in progress · ⬜ not started
 
 ## What it will do
 
@@ -84,18 +107,6 @@ support-triage/
 └── README.md
 ```
 
-## Roadmap
-
-- [ ] **Week 0:** setup and data exploration *(in progress)*
-- [ ] **Phase 1 (Weeks 1–2):** spec, off-the-shelf baseline, sampling and structured-output experiments
-- [ ] **Phase 2 (Weeks 3–5):** eval sets, validated AI judge, one-command evaluation pipeline
-- [ ] **Phase 3 (Weeks 6–7):** versioned prompts, triage → reply chain, prompt-attack testing
-- [ ] **Phase 4 (Weeks 8–10):** hybrid retrieval, grounded replies, tool-using agent
-- [ ] **Phase 5 (Weeks 11–13):** dataset curation and a fine-tuning vs. prompting comparison
-- [ ] **Phase 6 (Week 14):** latency and cost optimization
-- [ ] **Phase 7 (Weeks 15–16):** guardrails, router, gateway, monitoring, dashboard, deployment
-- [ ] **Week 17:** write-up and demo
-
 ## Results
 
 Filled in as each phase lands. Every number comes from `evals/history.csv` and is reported on a held-out test set.
@@ -113,5 +124,5 @@ Filled in as each phase lands. Every number comes from `evals/history.csv` and i
 
 ## Acknowledgments
 
-- *AI Engineering: Building Applications with Foundation Models* by Chip Huyen (O'Reilly, 2025), which this project follows chapter by chapter.
+- [*AI Engineering: Building Applications with Foundation Models*](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) by Chip Huyen (O'Reilly, 2025), which this project follows chapter by chapter, and its [companion repo](https://github.com/chiphuyen/aie-book).
 - Bitext, for the customer support dataset.
