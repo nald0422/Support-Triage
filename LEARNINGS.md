@@ -47,6 +47,7 @@ at risk of running out of publicly available internet data to train them.
   - There are fewer unique tokens than unique words making model's vocabulary reduce in size which makes the model efficient.
   - Tokens also helps identifying unknown words. For example a made up word like "maxxing" by breaking the word 
     we can come up with "max" and "xing" helping the model understand its structure.
+  - Typos and Unique words usually split into more pieces.
 
     ```mermaid
       flowchart LR
@@ -61,5 +62,25 @@ at risk of running out of publicly available internet data to train them.
       text -- "Tokenization" --> tokens
       tokens -- "Detokenization" --> out["Output text"]
     ```
+
+**Next**: Chapter 1
+
+## 2026-11-16 · Week 1 · Introduction to Building AI Applications with Foundation Models
+
+**Day 2**
+
+**Did:** 
+- Tokenization Experimentation
+  - Did a simple tokenization in python to tokenize a sentence using gemini and bert tokenizer.
+  - Loaded 20 random tickets from parquet's data frames using panda and parsed each item to their number of words, gemini and bert number of tokens, and gemini words per token.
+  - Refreshed some python syntax.
+  - Charted visual presentation of tokenization using mermaid.
+
+**Result** 
+- Most of words per token resulted to 3/4 which is the book's rule of thumb.
+- The average words per token of 20 random tickets are 0.78 which is still true to book's rule of thumb 3/4 of words per token.
+- Typo costs more tokens.
+- **Gemini** vs **Bert** :
+  - Bert's tokenization tend to split more words than gemini.
 
 **Next:** **Two main types of language models: masked language models and autore‐gressive language models.**
