@@ -90,24 +90,26 @@ at risk of running out of publicly available internet data to train them.
     - More popular than MLM.
     - Context are previous tokens only.
 
-    flowchart LR    
-    subgraph AR["Autoregressive LM: predicts the next token"]
-        direction LR
-        a_left["My order hasn't"] --> a_ctx(["Context:<br/>previous tokens only"])
-        a_ctx --> a_pred["[next token]<br/>→ arrived"]
-    end
+    ```mermaid
+      flowchart LR    
+      subgraph AR["Autoregressive LM: predicts the next token"]
+          direction LR
+          a_left["My order hasn't"] --> a_ctx(["Context:<br/>previous tokens only"])
+          a_ctx --> a_pred["[next token]<br/>→ arrived"]
+      end
 
-    subgraph MLM["Masked LM: fills in a hidden token"]
-        direction TB
-        m_right["yet, please help"] --> m_ctx
-        m_left["My order hasn't"] --> m_ctx(["Context:<br/>tokens on both sides"])
-        m_ctx --> m_pred["[MASK]<br/>→ arrived"]
-    end
+      subgraph MLM["Masked LM: fills in a hidden token"]
+          direction TB
+          m_right["yet, please help"] --> m_ctx
+          m_left["My order hasn't"] --> m_ctx(["Context:<br/>tokens on both sides"])
+          m_ctx --> m_pred["[MASK]<br/>→ arrived"]
+      end
 
-    classDef context stroke-dasharray: 5 5
-    classDef prediction fill:#1f6feb,stroke:#1f6feb,color:#ffffff
-    class a_ctx,m_ctx context
-    class a_pred,m_pred prediction
+      classDef context stroke-dasharray: 5 5
+      classDef prediction fill:#1f6feb,stroke:#1f6feb,color:#ffffff
+      class a_ctx,m_ctx context
+      class a_pred,m_pred prediction
+    ```
 
 **A model that can generate open-ended outputs are called *generative* which is coined to *generative AI*.**
 
