@@ -15,8 +15,8 @@ This project is my hands-on companion to ***AI Engineering: Building Application
 
 | Phase | Weeks | Chapters | What it builds | Status |
 | --- | --- | --- | --- | --- |
-| Setup | 0 | Preface, Ch 1 (intro) | Repo, dataset download and exploration | 🔄 |
-| 1 | 1–2 | Ch 1 Building AI Applications · Ch 2 Understanding Foundation Models | Spec, off-the-shelf baseline, sampling and structured-output experiments | ⬜ |
+| Setup | 0 | Preface, Ch 1 (intro) | Repo, dataset download and exploration | ✅ |
+| 1 | 1–2 | Ch 1 Building AI Applications · Ch 2 Understanding Foundation Models | Spec, off-the-shelf baseline, sampling and structured-output experiments | 🔄 |
 | 2 | 3–5 | Ch 3 Evaluation Methodology · Ch 4 Evaluate AI Systems | Eval sets, validated AI judge, one-command eval pipeline | ⬜ |
 | 3 | 6–7 | Ch 5 Prompt Engineering | Versioned prompts, triage → reply chain, prompt-attack testing | ⬜ |
 | 4 | 8–10 | Ch 6 RAG and Agents | Hybrid retrieval, grounded replies, tool-using agent | ⬜ |
