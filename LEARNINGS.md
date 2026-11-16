@@ -149,6 +149,7 @@ at risk of running out of publicly available internet data to train them.
 **Did:**
 
 - Skimmed From Large Language Models to Foundation Models, From Foundation Models to AI Engineering
+- Read foundation model use cases for conversational bots and workflow automation as this two uses cases will be the closest to the project.
 
 **Result:**
 
@@ -159,3 +160,7 @@ at risk of running out of publicly available internet data to train them.
 - **Embedding model**, trained to produce joint embeddings of both texts and images.
 
 - **AI engineering** refers to the process of building applications on top of foundation models.
+
+**Next:** 
+
+- *Planning AI Applications*
