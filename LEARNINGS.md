@@ -144,4 +144,18 @@ at risk of running out of publicly available internet data to train them.
 
 - Larger models needs more training data to maximize their performance, because it has more capacity to learn.
 
-**Next:** **Two main types of language models: masked language models and autore‐gressive language models.**
+**Day 3** **From Large Language Models to Foundation Models**
+
+**Did:**
+
+- Skimmed From Large Language Models to Foundation Models, From Foundation Models to AI Engineering
+
+**Result:**
+
+- **foundation** signifies both the importance of these models in AI applications and the fact that they can be built upon for different needs.
+- A model that can work with more than one data modality is also called a **multimodal model**.
+- generative multimodal model is also called a **large multimodal model (LMM)**.
+- a **multimodal model** generates the next token conditioned on both text and image tokens, or whichever modalities that the model supports.
+- **Embedding model**, trained to produce joint embeddings of both texts and images.
+
+- **AI engineering** refers to the process of building applications on top of foundation models.
